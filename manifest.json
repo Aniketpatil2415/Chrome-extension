@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "ColdPitcher",
+  "version": "1.0",
+  "description": "Freelancers ke liye Cold Message Templates Tool",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon128.png"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage", "identity"],
+  "host_permissions": [
+    "https://*.firebaseio.com/",
+    "https://*.googleapis.com/",
+    "https://*.firebaseapp.com/"
+  ],
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": ["email", "profile"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
